@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+<h1>FBI Agent</h1>
+
+<button onclick="typeWriter()">Click me to find out your mission</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "Do you have what it takes to be an FBI agent? Operation Goner: Sally's dog sitter's neighbor's brother's best friend AKA Finn is MIA. Find out who took him and punish them accordingly.";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+  </head>
+   
+
+  <img src= "https://78.media.tumblr.com/bce89f33c2e5f569f752ae2c2d0cae5a/tumblr_nw2z7pAZzK1s55rl4o1_500.gif" style="float: right;width:400px;height:300px">
+    <form action= "/results" method= post>
+
+<p>Check the answer to each multiple-choice question to find out if you have the potential to stop crime secretly.</p>
+
+<P>1. What weapon do you want to bring on your mission?<br>
+<input type="radio" name="1.What weapon do you want to bring on your mission?" value= 10 > Banana Peel<br>
+<input type="radio" name="1.What weapon do you want to bring on your mission?" value= 20 > Nunchucks<br>
+<input type="radio" name="1.What weapon do you want to bring on your mission?" value= 40 > Spray Bottle<br>
+</p>
+
+<P>2. Who do you want to accompany you?<br>
+<input type="radio" name="2. Who do you want to accompany you?" value= 10> Toby (elementary school dropout)<br>
+<input type="radio" name="2. Who do you want to accompany you?" value= 20> Bubbles (friendly goldfish)<br>
+<input type="radio" name="2. Who do you want to accompany you?" value= 40> Your mom (cleaner/maid)<br>
+</p>
+
+<P>3. What's your form of transportation?<BR>
+<input type="radio" name="3. What's your form of transportation?" value= 10>Uber with underage driver<BR>
+<input type="radio" name="3. What's your form of transportation?" value= 20>Electric scooter from your neighbor's yard<BR>
+<input type="radio" name="3. What's your form of transportation?" value= 40>Wonder Woman's invisible jet<BR>
+</p>
+
+<P>4. Finally after 3 years of hard work and dedication, you find the suspected criminal drinking coffee in a Starbucks. Do you...<BR>
+<input type="radio" name="4. Finally after 3 years of hard work and dedication, you find the suspected criminal drinking coffee in a Starbucks. Do you... " value= 0>Grab a coffee and sit down to chat with them<BR>
+<input type="radio" name="4. Finally after 3 years of hard work and dedication, you find the suspected criminal drinking coffee in a Starbucks. Do you..." value= 0>Make a public spectacle in arresting them<BR>
+<input type="radio" name="4. Finally after 3 years of hard work and dedication, you find the suspected criminal drinking coffee in a Starbucks. Do you..." value= 0>Start a flash mob to the song Smooth Criminal by Michael Jackson, which then traps the person in between all the venti cappuccinos<BR>
+</p>
+<br>
+
+<button type="submit"class="new"> See your results here!</button>
+  
+
+  </form>
+  </body>
+  
+</html>
